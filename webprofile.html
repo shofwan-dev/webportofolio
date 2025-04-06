@@ -304,17 +304,17 @@
             <h2 class="text-center mb-5">Let's Connect</h2>
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <form>
+                    <form action="proses-form.php" method="POST">
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="text" id="name" class="form-control" name="name" placeholder="Name">
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="email" id="email" class="form-control" name="email" placeholder="Email">
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                            <textarea id="message" class="form-control" rows="5" name="message" placeholder="Message"></textarea>
                         </div>
-                        <button class="btn btn-primary w-100">Send Message</button>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
                     </form>
                 </div>
             </div>

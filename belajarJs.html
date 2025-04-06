@@ -1,0 +1,29 @@
+<p id="p1">Ini percobaan paragraf</p>
+<input type="text" id="input1"/>
+<button onclick="validateName()" type="submit">Kirim</button>
+<script>
+    function validateName() {
+        let input = document.getElementById("input1").value;
+        if (input.length < 5) {
+            alert("Nama terlalu pendek, minimal 5 karakter!");
+            return false;
+        }
+        return true;
+    }
+    document.getElementById("p1").innerHTML = "Ini adalah paragraf yang diubah dengan JavaScript";
+    let angka = 1;
+    let angka2 = 4;
+
+    let hasil = angka + angka2;
+    console.log(hasil); // Output: 3
+
+    if (hasil > 5) {
+        console.log("Hasil lebih besar dari 5");
+    } else {
+        console.log("Hasil kurang dari atau sama dengan 5");
+    }
+
+    for (let i = 0; i <= 15; i++) {
+        console.log("Perulangan ke-" + i);
+    }
+</script>
